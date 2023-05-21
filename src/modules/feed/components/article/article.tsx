@@ -13,7 +13,7 @@ export const Article = () => {
                  src="https://api.realworld.io/images/demo-avatar.png"
                  alt="avatar"/>
           </Link>
-          <div className="mr-6 ml-0.3 inline-flex leading-4 flex flex-col">
+          <div className="mr-6 ml-0.3 inline-flex leading-4 flex flex-col ">
             <Link to="/@odin" className="font-medium">
               Zina Shulha
             </Link>
