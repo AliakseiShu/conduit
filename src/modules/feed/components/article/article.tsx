@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { FavoriteButton } from "../../../../common/components/favorite-button/favorite-button";
-import { TagList } from "../../../../common/components/tag-list/tag-list";
+import { FavoriteButton } from "../favorite-button/favorite-button";
+import { TagList } from "../tag-list/tag-list";
 
 export const Article = () => {
   return (

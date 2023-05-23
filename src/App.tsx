@@ -1,8 +1,8 @@
 import { FC } from "react";
 import { Header } from "./common/components/header/header";
 import { Banner } from "./common/components/banner/banner";
-import { ArticleList } from "./common/components/article-list/article-list";
-import { Feed } from "./common/components/feed/feed";
+import { ArticleList } from "./modules/feed/components/article-list/article-list";
+import { Feed } from "./modules/feed/components/feed/feed";
 
 interface AppProps {
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from "../container/container";
+import { Container } from "../../../../common/components/container/container";
 import { ArticleList } from "../article-list/article-list";
 import { FeedToggle } from "../feed-toggle/feed-toggle";
 

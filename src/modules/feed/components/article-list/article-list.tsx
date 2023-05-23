@@ -1,5 +1,5 @@
 import React from 'react';
-import { Article } from "../../../modules/feed/components/article/article";
+import { Article } from "../article/article";
 
 export const ArticleList = () => {
   return (
