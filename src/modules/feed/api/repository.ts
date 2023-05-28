@@ -1,19 +1,21 @@
-import { createApi } from "@reduxjs/toolkit/query";
+import { createApi } from '@reduxjs/toolkit/query/react'
 import { axiosBaseQuery } from "../../../core/axios-base-query";
+import { GlobalFeedIn } from "./dto/global-feed-in";
+import { EndpointBuilder } from "@reduxjs/toolkit/dist/query/endpointDefinitions";
 
 export const feedApi = createApi({
   reducerPath: 'feedApi',
   baseQuery: axiosBaseQuery({
-    baseUrl: 'https://api.realworld.io/api/articles'
+    baseUrl: 'https://api.realworld.io/api',
   }),
-  endpoints: (builder) => ({
-    getGlobalFeed: builder.query<any, void>({
+  endpoints: (builder: EndpointBuilder<void, string, string>) => ({
+    getGlobalFeed: builder.query<GlobalFeedIn, undefined>({
       query: () => ({
         url: '/articles',
-        method: 'GET'
-      })
-    })
-  })
+        method: 'get'
+      }),
+    }),
+  }),
 })
 
-export const { useGetGlobalFeed } = feedApi;
+export const {useGetGlobalFeedQuery} = feedApi
