@@ -15,7 +15,8 @@ export default {
         newGrey:'#bbb',
         lightGrey:'#999',
         borderGrey:'#ddd',
-        textGrey:'#aaa'
+        textGrey:'#aaa',
+        pageHoverBg:'#eceeef'
       },
       spacing: {
         navItem: '0.425rem',
